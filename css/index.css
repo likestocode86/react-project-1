@@ -1,0 +1,43 @@
+html {
+	font-family: "Nitti Grotesk", helvetica, sans-serif;
+}
+.board {
+	background-color: blue;
+	color:white;
+	font-weight:bold;
+	padding:10px;
+	width:100%;
+	height:300px;
+
+}
+
+.board-title {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.list {
+	font-size: 20px;
+	background-color: gray;
+	padding: 0px 30px 30px 30px;
+	width: calc(100% / 4);
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.list-title {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.card {
+	background-color: white;
+	width: 100%;
+	margin-bottom: 6px;
+	color:black;
+}
+#map {
+   height: 400px;
+   width: 100%;
+}
