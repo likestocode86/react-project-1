@@ -2,6 +2,10 @@ import React from 'react';
 import Card from './card';
 
 export default class CardList extends React.Component {	
+	constructor(props){
+		super(props);
+	}
+
 	render() {
 		let listOfCards = [];
 		let allCardData = {};
@@ -19,6 +23,11 @@ export default class CardList extends React.Component {
 			<div className="list">
 				<p className="list-title">{this.props.title}</p>
 					{listOfCards}
+
+			<form method="post" action="http://www.google.com" onSubmit={props.onAddSubmit}>
+				<input type="text" onChange={props.onAddInputChanged}/>
+				<input type="submit" value="Submit" />
+			</form>
 			</div>
 		);
 	}
