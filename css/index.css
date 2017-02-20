@@ -23,6 +23,7 @@ html {
 	width: calc(100% / 4);
 	display: inline-block;
 	margin-left: 20px;
+	vertical-align: top;
 }
 
 .list-title {

@@ -1,19 +1,19 @@
 import React from 'react';
-import CardList from './list';
+import ListContainer from './list-container';
 
 export default class Board extends React.Component {	
 	render() {
-		let lists = [];
+		let listContainers = [];
 		let listTitlesAsArray = this.props.lists.split(' ');
 
-		console.log(typeof listTitles);
 		for (let i = 0; i < 3; i++) {
-			lists.push(<CardList title = {listTitlesAsArray[i]} />);
+			listContainers.push(<ListContainer listTitle={listTitlesAsArray[i]} />);
 		}
+
 		return (
 			<div className="board">
 				<p className="board-title">{this.props.boardTitle}</p>
-				{lists}
+				{listContainers}
 			</div>
 		);
 	}
